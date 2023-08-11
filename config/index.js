@@ -1,6 +1,8 @@
+const path = require('path') // eslint-disable-line
+
 const config = {
   projectName: 'myApp',
-  date: '2021-7-16',
+  date: '2023-7-16',
   designWidth: 750,
   deviceRatio: {
     640: 2.34 / 2,
@@ -10,6 +12,9 @@ const config = {
   sourceRoot: 'src',
   outputRoot: 'dist',
   plugins: [],
+  alias: {
+    '@': path.resolve(__dirname, '..', 'src')
+  },
   defineConstants: {
   },
   copy: {
